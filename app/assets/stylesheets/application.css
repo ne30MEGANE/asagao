@@ -15,7 +15,7 @@
  */
 /* ページ全体 */
 body {
-  background-color: white;
+  background-color: whites;
   color: black;
   margin: 0; padding: 0;
   font-family: Meiryo, sans-serif;
@@ -73,7 +73,7 @@ aside#sidebar {
 
 /* ヘッダー */
 header {
-  border-top: 4px solid #6bb;
+  border-top: 4px solid #006400;
   padding-top: 4px;
 }
 
@@ -85,9 +85,9 @@ ul.account-menu {
 footer {
   clear: both;
   font: 11px Verdana;
-  color: #888;
+  color: yellowgreen;
   padding: 8px 0;
-  border-top: 4px solid #6bb;
+  border-top: 4px solid #006400;
   text-align: center;
 }
 
@@ -100,10 +100,11 @@ footer nav ul li:not(:last-child):after {
 /* メニューバー */
 nav.menubar {
   padding: 2px;
-  background-color: #000;
+  background-color: #2f4f4f;
   color: #ccc;
   font-size: 80%;
   padding: 8px 16px;
+  transition: all 0.3s;
 }
 
 nav.menubar ul li:not(:last-child):after {
@@ -113,10 +114,14 @@ nav.menubar ul li:not(:last-child):after {
 }
 
 /* メニューバーのリンク */
-nav.menubar a { text-decoration: none; }
+nav.menubar a {
+  text-decoration: none;
+}
 
 /* メニューバーのリンク（未訪問） */
-nav.menubar a:link { color: #ccc; }
+nav.menubar a:link {
+  color: #ccc;
+}
 
 /* メニューバーのリンク（訪問済） */
 nav.menubar a:visited { color: #ccc; }
@@ -124,7 +129,6 @@ nav.menubar a:visited { color: #ccc; }
 /* メニューバーのリンク（マウスを合わせたとき） */
 nav.menubar a:hover {
   color: #f88;
-  text-decoration: underline;
 }
 
 /* メニューバーのリンク（現在のページ） */
@@ -143,16 +147,19 @@ main h1 {
 }
 
 main h2 {
-  color: #99d;
+  color: green;
   font-weight: bold;
   font-size: 120%;
   margin-bottom: 0.5em;
-  border-bottom: 1px solid #ccf;
+  padding-left: 5px;
+  border-bottom: 4px double palegreen;
 }
 
 main p {
-  font-size: 90%;
-  line-height: 1.5;
+  font-size: 100%;
+  margin-left: 5%;
+  padding: 3%;
+  background-color: honeydew;
 }
 
 ul.toolbar,
