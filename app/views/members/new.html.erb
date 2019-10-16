@@ -3,6 +3,6 @@
 <h1><%= @page_title %></h1>
 
 <%= form_for @member do |form| %>
-	<%= render "form", form: gorm %>
+	<%= render "form", form: form %>
 	<div><%= form.submit %></div>
 <% end %>
