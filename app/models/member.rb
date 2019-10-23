@@ -1,5 +1,7 @@
 class Member < ApplicationRecord
-	validates :number, presence: true,
+  has_secure_password
+
+  validates :number, presence: true,
 		numericality: {
 			only_integer: true,
 			greater_than: 0,
