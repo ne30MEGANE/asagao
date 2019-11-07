@@ -15,7 +15,7 @@
 <ul>
   <% entries.each do |entry| %>
     <li>
-      <%= link_to entry.title, :entry %>
+				<%= link_to entry.title, entry %>
       by <%= link_to entry.author.name, [entry.author, :entries] %>
     </li>
   <% end %>
