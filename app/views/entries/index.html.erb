@@ -2,6 +2,10 @@
 <h1><%= @page_title %></h1>
 
 <% if current_member %>
+  <ul>
+    <%= menu_link_to "ブログ記事の作成", :new_entry %>
+    <%= menu_link_to "投票した記事", :voted_entries %>
+  </ul>
   <div class="toolbar"><%= link_to "ブログ記事の作成", :new_entry %></div>
 <% end %>
 
