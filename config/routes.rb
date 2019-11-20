@@ -22,4 +22,8 @@ Rails.application.routes.draw do
     get "voted", on: :collection
   end
 
+  namespace :admin do
+	  root "top#index"
+  end		
+
 end
