@@ -4,6 +4,7 @@ class Member < ApplicationRecord
   has_many :votes, dependent: :destroy
 	has_one_attached :profile_picture
 	attribute :new_profile_picture
+  attribute :remove_profile_picture, :boolean
   has_many :voted_entries, through: :votes, source: :entry
   validates :number, presence: true,
 		numericality: {
@@ -36,6 +37,8 @@ class Member < ApplicationRecord
   before_save do
 	  if new_profile_picture
 		  self.profile_picture = new_profile_picture
+		elsif remove_profile_picture
+		  self.profile_picture.purge
 		end
 	end
 
